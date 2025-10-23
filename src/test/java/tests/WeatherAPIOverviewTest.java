@@ -9,7 +9,6 @@ import io.restassured.response.Response;
 // Importing TestNG Assert for response validation
 import org.testng.Assert;
 // Importing TestNG annotation for test methods
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 // Importing custom ConfigReader utility for reading configuration properties
 import utils.ConfigReader;

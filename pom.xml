@@ -48,19 +48,6 @@
             <artifactId>allure-testng</artifactId>
             <version>2.27.0</version>
         </dependency>
-        <dependency>
-            <groupId>io.rest-assured</groupId>
-            <artifactId>rest-assured</artifactId>
-            <version>5.5.1</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>7.10.2</version>
-            <scope>compile</scope>
-        </dependency>
-
         <!-- removed Gson for JSON parsing -->
 
     </dependencies>
