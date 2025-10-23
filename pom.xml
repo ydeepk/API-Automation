@@ -28,11 +28,12 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- JSON simple for handling data -->
+        <!-- replace "json simple" with "jackson" for handling JSON data-->
+        <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core -->
         <dependency>
-            <groupId>com.googlecode.json-simple</groupId>
-            <artifactId>json-simple</artifactId>
-            <version>1.1.1</version>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+            <version>2.20.0</version>
         </dependency>
 
         <!-- Allure for reports -->
@@ -42,24 +43,8 @@
             <version>2.27.0</version>
         </dependency>
 
-        <!-- Gson for JSON parsing -->
-        <dependency>
-            <groupId>com.google.code.gson</groupId>
-            <artifactId>gson</artifactId>
-            <version>2.10.1</version>
-        </dependency>
-        <dependency>
-            <groupId>io.rest-assured</groupId>
-            <artifactId>rest-assured</artifactId>
-            <version>5.5.1</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>7.10.2</version>
-            <scope>compile</scope>
-        </dependency>
+        <!-- removed Gson for JSON parsing -->
+
     </dependencies>
 
     <build>
