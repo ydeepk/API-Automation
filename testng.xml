@@ -8,7 +8,7 @@
     </test>
     <test name="OpenWeatherTests">
         <classes>
-            <class name="tests.WeatherAPIOverviewTest"/>
+            <class name="tests.CreateUserTest"/>
         </classes>
     </test>
 </suite>

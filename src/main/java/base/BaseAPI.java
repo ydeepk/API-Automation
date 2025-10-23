@@ -16,7 +16,11 @@ public class BaseAPI {
         // Load configuration properties from the config file
         ConfigReader.loadProperties();
         // Set the base URI for RestAssured using the value from config properties
-        RestAssured.baseURI = ConfigReader.get("baseURI");
+        RestAssured.baseURI = ConfigReader.get("reqresBaseURI");
+
+        if(RestAssured.baseURI == null || RestAssured.baseURI.isEmpty()) {
+            throw new RuntimeException("Base URI key '"+ RestAssured.baseURI +"' is missing or invalid !");
+        }
         // Log the base URI for debugging purposes
         System.out.println("Base URI set to: " + RestAssured.baseURI);
     }
