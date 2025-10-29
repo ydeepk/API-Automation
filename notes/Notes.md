@@ -14,8 +14,8 @@
         - 3.3.2 finally
         - 3.3.3 throw and throws
         - 3.3.4 Types of Exceptions (User-defined and Built-in)
-        - 3.3.5 Checked vs Unchecked Exceptions
-
+        - 3.3.5 [Checked vs Unchecked Exceptions](https://www.geeksforgeeks.org/java/java-checked-vs-unchecked-exceptions/)
+        - 3.3.6 exception handling - method overriding
 ---
 
 ## 🧩 Interview Preparation
