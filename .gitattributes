@@ -1,0 +1,22 @@
+# Auto normalize line endings
+* text=auto
+
+# Mark common filetypes as text
+*.java text
+*.xml  text
+*.json text
+*.yml  text
+*.properties text
+
+# Binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.pdf binary
+*.exe binary
+*.jar binary
+*.zip binary
+
+# Improve diff for TestNG XML
+*.xml diff=xml
