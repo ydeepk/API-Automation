@@ -1,3 +1,31 @@
+###Folder Structure (Full Framework)
+
+src
+├── main
+│    ├── java
+│    │     └── framework
+│    │           ├── assertions
+│    │           ├── config
+│    │           ├── core
+│    │           ├── listeners
+│    │           ├── logging
+│    │           ├── models
+│    │           ├── reporting
+│    │           └── utils
+│    └── resources
+│           ├── logback.xml
+│           ├── config.properties
+│           ├── config-qa.properties
+│           └── config-dev.properties
+└── test
+├── java
+│     └── tests
+│           ├── BaseTest.java
+│           ├── UserTests.java
+└── resources
+└── schemas
+
+
 
 # ✅ 3. **Git Branching Strategy (Recommended for Automation Teams)**
 
