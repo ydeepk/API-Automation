@@ -1,78 +1,74 @@
-# ========================================
-# IntelliJ IDEA
-# ========================================
-.idea/
-*.iml
-out/
-*.ipr
-*.iws
-
-# ========================================
-# Maven build files
-# ========================================
+############################
+# Maven / Build Artifacts
+############################
 target/
-pom.xml.tag
-pom.xml.releaseBackup
-pom.xml.versionsBackup
-pom.xml.next
-release.properties
-
-# ========================================
-# Logs and temporary files
-# ========================================
-*.log
-*.tmp
-*.swp
-*.bak
-*.DS_Store
-Thumbs.db
-
-# ========================================
-# OS generated files
-# ========================================
-.DS_Store
-ehthumbs.db
-Icon?
-Desktop.ini
-
-# ========================================
-# Allure or Test Reports
-# ========================================
-allure-results/
-allure-report/
+out/
+build/
+surefire-reports/
 test-output/
 
-# ========================================
-# Java-related files
-# ========================================
+############################
+# IntelliJ / JetBrains
+############################
+.idea/
+*.iml
+*.iws
+*.ipr
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/dataSources/
+.idea/**/dataSources.local.xml
+.idea/**/shelf/
+*.orig
+
+############################
+# Java Compiled Files
+############################
 *.class
 *.jar
 *.war
 *.ear
-*.javadoc
-*.java~
-hs_err_pid*
-replay_pid*
+*.dll
+*.exe
 
-# ========================================
-# Environment and local configs
-# ========================================
-.env
+############################
+# Logs & Temp Files
+############################
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+
+############################
+# System Files
+############################
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+############################
+# Environment / Secrets
+############################
+*.env
+*.env.*
 *.local
-*.credentials
 *.properties.local
+secret*.properties
 
-# ========================================
-# IntelliJ caches and plugin settings
-# ========================================
-.idea/**/workspace.xml
-.idea/**/tasks.xml
-.idea/**/usage.statistics.xml
-.idea/**/dictionaries
-.idea/**/shelf
-.idea/**/libraries
-.idea/**/modules.xml
-.idea/**/gradle.xml
-.idea/**/misc.xml
-.idea/**/compiler.xml
-.idea/**/jarRepositories.xml
+############################
+# Test Automation
+############################
+*.report.html
+allure-results/
+allure-report/
+extent-reports/
+reports/
+
+############################
+# Node / Python (if auxiliary tools exist)
+############################
+node_modules/
+dist/
+venv/
+__pycache__/
