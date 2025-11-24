@@ -6,7 +6,7 @@ package core;
 public class EndPoints {
 
     /** Endpoint to create a new user. */
-    public static final String CREATE_USER = "/users";
+    public static final String CREATE_USER = "/api/users";
 
     /** Endpoint to get users (page 2). */
     public static final String GET_USERS = "/users?page=2";

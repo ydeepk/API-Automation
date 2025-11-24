@@ -29,6 +29,7 @@ public class RequestBuilder {
         return given()
                 .baseUri(ConfigManager.get("reqresBaseURI"))
                 .header("Content-Type", "application/json")
+                .header("x-api-key", "reqres-free-v1")
                 .log().all()
                 .config(RestAssuredConfig.config()
                         .httpClient(HttpClientConfig.httpClientConfig()
