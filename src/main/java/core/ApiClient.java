@@ -11,9 +11,6 @@ import io.restassured.response.Response;
  */
 public class ApiClient {
 
-    /** Base URL for all API requests, read from configuration. */
-    private static final String BASE_URL = ConfigManager.get("base.url");
-
     /**
      * Sends a POST request to the given endpoint with the provided request body.
      *
@@ -24,7 +21,7 @@ public class ApiClient {
     public static Response post(String endpoint, Object body) {
         return RequestBuilder.getRequest()
                 .body(body)
-                .post(BASE_URL + endpoint);
+                .post(endpoint);
     }
 
     /**
@@ -35,7 +32,7 @@ public class ApiClient {
      */
     public static Response get(String endpoint) {
         return RequestBuilder.getRequest()
-                .get(BASE_URL + endpoint);
+                .get(endpoint);
     }
 }
 
